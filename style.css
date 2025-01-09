@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/static/Outfit-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/static/Outfit-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/static/Outfit-Light.ttf') format('truetype');
+    font-weight: 300; /* Light */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/static/Outfit-ExtraBold.ttf') format('truetype');
+    font-weight: 800; /* Extra Bold */
+    font-style: normal;
+}
+@font-face {
+    font-family: 'YoungSerif';
+    src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf) format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    height: 100vh;
+    background-color: hsl(30, 54%, 90%);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background-color: hsl(0, 0%, 100%);
+    margin: auto;
+    padding: 25px;
+    border-radius: 10px ;
+    
+}
+
+img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+h1,h2,h3,h4,h5,p,li,tr,th,ul{
+    font-size: 11px;
+    text-justify: distribute;
+    margin-bottom: 10px;
+}
+h2{
+    color: hsl(332, 51%, 32%);
+}
+h3,h4,h5{
+    color: hsl(14, 45%, 36%);
+    font-size: 15px;
+    font-family: 'YoungSerif';
+}
+h1{
+    font-size: 25px;
+    color: hsl(24, 5%, 18%);
+    font-family: 'YoungSerif';
+}
+.co{
+    margin: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-bottom: 1px solid hsl(32, 12%, 58%);
+    padding: 20px;
+}
+
+.time_container{
+    margin-left: 25px;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+}
+
+th{
+    text-align: left; /* Alinea el texto a la izquierda */
+      border-bottom: 1px solid #000; /* Línea debajo de cada th */
+      padding: 8px; /* Espaciado interno */
+    border-bottom: 1px solid hsl(32, 12%, 58%) ;
+    color: hsl(30, 10%, 34%);
+}
+
+p,li{
+    color: hsl(30, 10%, 34%);
+}
+table{
+    margin-left: 25px;
+    border-collapse: collapse; /* Quita los espacios entre bordes */
+    width: 100%;
+}
+.nutrition_container{
+    border-bottom: none;
+}
+.time_container{
+    border-bottom: none;
+}
+.cal{
+    color: hsl(332, 51%, 32%);
+}
+li::marker{
+    color: hsl(14, 45%, 36%);
+}
